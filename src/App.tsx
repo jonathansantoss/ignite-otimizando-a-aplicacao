@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { SideBar } from './components/SideBar';
-import { Content } from './components/Content';
+import { ContentMovies } from './components/Content';
 
 import { api } from './services/api';
 
@@ -63,7 +63,7 @@ export function App() {
         buttonClickCallback={handleClickButton}
       />
 
-      <Content
+      <ContentMovies
         selectedGenre={selectedGenre}
         movies={movies}
       />
